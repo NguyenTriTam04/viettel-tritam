@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viettel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header,
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .product-card {
+            margin: 15px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .navbar-brand {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff0000;
+        }
+
+        .contact-btn {
+            background-color: #ff0000;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-weight: bold;
+        }
+
+        .contact-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .why-viettel {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+}
+
+.why-viettel h2 {
+    color: #ff0000; /* Màu đỏ đặc trưng của Viettel */
+    font-weight: bold;
+}
+
+.why-viettel p {
+    color: #333;
+}
+
+.why-viettel h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+.why-viettel .lead {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-section {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+}
+
+.contact-section h2 {
+    color: #ff0000; /* Màu đỏ đặc trưng của Viettel */
+    font-weight: bold;
+}
+
+.contact-section p {
+    color: #333;
+}
+
+.contact-section h5 {
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-section .contact-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.contact-section .contact-btn:hover {
+    background-color: #cc0000;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VIETTEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Gói Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wifi">Internet/Truyền hình</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cameras">Camera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lienhe">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hình ảnh nhỏ hơn -->
+    <header class="header">
+        <div class="container-fluid">
+            <img src="image/viettel.jpg" alt="Viettel Logo" class="hero-image">
+        </div>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="container-fluid mt-4">
+       <hr> <section class="why-viettel py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Về chúng tôi</h2>
+                <p class="lead">Viettel là nhà cung cấp dịch vụ viễn thông hàng đầu tại Việt Nam, cung cấp các gói cước linh hoạt, tốc độ cao và dịch vụ hỗ trợ tận tâm. Chúng tôi cam kết mang đến cho khách hàng trải nghiệm tốt nhất với mạng lưới phủ sóng rộng khắp, an toàn và đáng tin cậy.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <h4>Độ phủ sóng toàn quốc</h4>
+                        <p>Đảm bảo kết nối ổn định ở mọi nơi, từ thành thị đến vùng sâu vùng xa.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Giá cước cạnh tranh</h4>
+                        <p>Các gói dịch vụ giá cả hợp lý, phù hợp với mọi đối tượng khách hàng.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Dịch vụ khách hàng 24/7</h4>
+                        <p>Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ bạn bất cứ lúc nào.</p>
+                    </div>
+                </div>
+            </div><hr><br>
+        </section>
+        <section id="packages">
+            <h2 class="text-center">Danh sách gói Data</h2>
+            <hr>
+            <div class="row">
+                <!-- Gói cước 4G - Data S -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">MI7D</div>
+                        <div class="card-body">
+                            <h5 class="card-title">700MB/ngày</h5>
+                            <p class="card-text">7.000/ngày</p>
+                            <p class="card-text">Nhấn nút Đăng ký hoặc soạn MI7D gửi 191</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước 4G - Data M -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">ST70K</div>
+                        <div class="card-body">
+                            <h5 class="card-title">500MB data tốc độ cao/ngày</h5>
+                            <p class="card-text">70.000/30 ngày</p>
+                            <p class="card-text">Nhấn nút Đăng ký hoặc soạn ST70K gửi 191</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước 4G - Data L -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">SD120</div>
+                        <div class="card-body">
+                            <h5 class="card-title">2GB/ngày</h5>
+                            <p class="card-text">120.000/tháng</p>
+                            <p class="card-text">Nhấn nút Đăng ký hoặc soạn SD120 gửi 191</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước 4G - Data XL -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">SD90</div>
+                        <div class="card-body">
+                            <h5 class="card-title">1.5GB/ngày</h5>
+                            <p class="card-text">90.000/tháng</p>
+                            <p class="card-text">Nhấn nút Đăng ký hoặc soạn SD90 gửi 191</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nút xem tất cả -->
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-danger">Xem tất cả gói Data</a>
+            </div>
+        </section>
+        <br><br>
+        <section id="wifi">
+            <h2 class="text-center">Danh sách gói Internet/Truyền hình</h2>
+            <hr>
+            <div class="row">
+                <!-- Gói cước STAR1T -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">STAR1T</div>
+                        <div class="card-body">
+                            <img src="image/strar1t.jpg" alt="Gói cước STAR1T" class="img-fluid mb-3">
+                            <h5 class="card-title">Tốc độ: 200Mbps</h5>
+                            <p class="card-text">210.000đ/tháng</p>
+                            <p class="card-text small">
+                                Áp dụng tại 61 Tỉnh và ngoại thành Hà Nội, TP Hồ Chí Minh. Phù hợp với khách hàng có nhu cầu mở rộng vùng phủ.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước STAR2T -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">STAR2T</div>
+                        <div class="card-body">
+                            <img src="image/star2t.jpg" alt="Gói cước STAR2T" class="img-fluid mb-3">
+                            <h5 class="card-title">Tốc độ: Lên tới 200Mbps</h5>
+                            <p class="card-text">245.000đ/tháng</p>
+                            <p class="card-text small">
+                                Áp dụng tại 61 Tỉnh và ngoại thành Hà Nội, TP Hồ Chí Minh. Phù hợp với khách hàng có nhu cầu mở rộng vùng phủ.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước STAR1H -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">STAR1H</div>
+                        <div class="card-body">
+                            <img src="image/star1h.jpg" alt="Gói cước STAR1H" class="img-fluid mb-3">
+                            <h5 class="card-title">Tốc độ: 200Mbps</h5>
+                            <p class="card-text">255.000đ/tháng</p>
+                            <p class="card-text small">
+                                Áp dụng tại nội thành Hà Nội, TP Hồ Chí Minh. Phù hợp với khách hàng có nhu cầu mở rộng vùng phủ Wifi.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói cước STAR2H -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">STAR2H</div>
+                        <div class="card-body">
+                            <img src="image/star2h.jpg" alt="Gói cước STAR2H" class="img-fluid mb-3">
+                            <h5 class="card-title">Tốc độ: Lên tới 200Mbps</h5>
+                            <p class="card-text">289.000đ/tháng</p>
+                            <p class="card-text small">
+                                Áp dụng tại nội thành Hà Nội, TP Hồ Chí Minh. Phù hợp với khách hàng có nhu cầu cao về băng thông và tốc độ.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nút xem tất cả -->
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-danger">Xem tất cả gói Internet/Truyền hình</a>
+            </div>
+        </section><br><br>
+        <section id="cameras">
+            <h2 class="text-center">Danh sách gói TV360/Camera</h2>
+            <hr>
+            <div class="row">
+                <!-- Gói cước STAR1T -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">HOMET-STD</div>
+                        <div class="card-body">
+                            <img src="image/Sun-star (2)_HOMET-STD-01.jpg" alt="Gói cước STAR1T" class="img-fluid mb-3">
+                            <h5 class="card-title">150Mbps + STD TV360App</h5>
+                            <p class="card-text">195.000vnđ/tháng</p>
+                            <p class="card-text">Phí hòa mạng: 300.000 đồng</p>
+                            <p class="card-text small">
+                                Với gần 200 kênh Truyền hình trong nước và quốc tế.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">HOMET-STDBOX</div>
+                        <div class="card-body">
+                            <img src="image/Sun-star (2)_260224_HOMET-STD BOX-19(1).jpg" alt="Gói cước HOMET-STDBOX" class="img-fluid mb-3">
+                            <h5 class="card-title">150Mbps + STD TV360Box</h5>
+                            <p class="card-text">225.000/tháng</p>
+                            <p class="card-text">Phí hòa mạng: 300.000 đồng</p>
+                            <p class="card-text small">
+                                Với gần 200 kênh Truyền hình trong nước và quốc tế.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">SUN1T-STD</div>
+                        <div class="card-body">
+                            <img src="image/Sun-star (2)_260224_SUN1T-STD-04.jpg" alt="Gói cước SUN1T-STD" class="img-fluid mb-3">
+                            <h5 class="card-title">200Mbps + STD TV360App</h5>
+                            <p class="card-text">210.000/tháng</p>
+                            <p class="card-text">Phí hòa mạng: 300.000 đồng</p>
+                            <p class="card-text small">
+                                Với gần 200 kênh Truyền hình trong nước và quốc tế.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-header bg-danger text-white">SUN1T-STDBOX</div>
+                        <div class="card-body">
+                            <img src="image/Sun-star (2)_260224_SUN1T-STD BOX-22.jpg" alt="Gói cước SUN1T-STDBOX" class="img-fluid mb-3">
+                            <h5 class="card-title">200Mbps + STD TV360Box</h5>
+                            <p class="card-text">240.000/tháng</p>
+                            <p class="card-text">Phí hòa mạng: 300.000 đồng</p>
+                            <p class="card-text small">
+                                Với gần 200 kênh Truyền hình trong nước và quốc tế.
+                            </p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Đăng ký</a>
+                            <a href="#" class="btn btn-outline-secondary w-100">Chi tiết gói cước</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Camera Ngoài Trời -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-body">
+                            <img src="image/c1.jpg" alt="Camera Ngoài Trời" class="img-fluid mb-3">
+                            <h5 class="card-title">CAMERA NGOÀI TRỜI</h5>
+                            <p class="card-text">990.000đ</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Camera Trong Nhà -->
+                <div class="col-md-3">
+                    <div class="card product-card text-center">
+                        <div class="card-body">
+                            <img src="image/c2.jpg" alt="Camera Trong Nhà" class="img-fluid mb-3">
+                            <h5 class="card-title">CAMERA TRONG NHÀ</h5>
+                            <p class="card-text">690.000đ</p>
+                            <a href="#" class="btn btn-danger w-100 mb-2">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- HomeWifi (Bộ 3 Thiết Bị) -->
+                
+            </div>
+            <!-- Nút xem tất cả -->
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-danger">Xem tất cả</a>
+            </div>
+        </section><br>
+        <!-- Phần Liên hệ -->
+<section id="lienhe" class="contact-section py-5">
+    <div class="container text-center">
+        <h2  class="mb-4">Liên hệ với chúng tôi</h2>
+        <p class="lead">Viettel luôn sẵn sàng hỗ trợ bạn mọi lúc, mọi nơi. Hãy liên hệ với chúng tôi qua các thông tin bên dưới:</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h5>Hotline</h5>
+                <p>1800 8098</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Email</h5>
+                <p>support@viettel.com.vn</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Địa chỉ</h5>
+                <p>Cần Thơ, Việt Nam</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="btn btn-danger contact-btn">Xem chi tiết</a>
+        </div>
+    </div>
+</section>
+<br>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer style="background-color: #f8f9fa; padding: 20px; text-align: center; font-size: 14px;">
+    <p style="margin: 0;">&copy; 2024 Viettel. Tất cả các quyền được bảo lưu.</p>
+    <p style="margin: 0;">Hotline: 1800 8098 | Email: support@viettel.com.vn</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+</html>
